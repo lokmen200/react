@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Input from "./components/Input"
 import Main from "./components/Main"
+import Card from "./components/Card"
 
 
 function App() {
@@ -23,17 +24,9 @@ function App() {
 
   return (
     <> 
-      <form className='container'>
-        <input type="text" placeholder='Something You want to do ' value={inputValue} onChange={handlChange}/>
-        <button onClick={addTodo}>Add</button>
-      </form>
-      <ul>
-        {todos.map((todo , index)=>(
-          <li key={index }>{todo}
-          <button onClick={()=> deletTodo(index)}>Del</button>
-          </li>
-        ))}
-      </ul>
+       <Card/>
+      <Input  inputValue = {inputValue} handlChange = {handlChange} addTodo = {addTodo} />
+      <Main todos = {todos} deletTodo = {deletTodo}/>
     </>
   )
 }

@@ -29,6 +29,17 @@ button{
   font-family: 'merienda';
 
 }
+.del-btn{
+  background-color: hsl(0, 69%, 31%);
+  border-radius: 10%;
+  color: black;
+  width: 50px;
+  margin: 10px;
+}
+p{
+  padding-left: 15px;
+}
+
 .container{
   display: flex;
 }
@@ -44,9 +55,10 @@ li{
   border: 0.1px solid hsl(0, 1%, 63%);
   border-radius: 10px;
   margin: 10px;
-  padding: 7px;
   width: 100%;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 
 }
 
